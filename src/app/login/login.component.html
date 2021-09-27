@@ -1,11 +1,14 @@
 <h2 style="text-align: center; font-weight: bold; font-family: 'Times New Roman', Times, serif;">Login</h2>
 <div class="container-fluid" style="border: 1px solid red; border-radius: 12px;">
-  <label for="name" style="padding-right: 30px;align-items: center;">Username:</label>
-  <input type="text" placeholder="Your Name" style="border-radius: 10px;"#name>
+ <div class="container">
+  <label for="name" style="padding-right: 30px;align-items: center;" style="margin: 25px; align-items: center;">Username:</label>
+  <input type="text" placeholder="Your Name" style="border-radius: 10px;"#name style="margin: 25px; align-items: center; border-radius: 7px;">
   <br>
-  <label for="name" style="padding-right: 30px;align-items: center;margin-top: 20px;">Password:</label>
-  <input type="password" placeholder="Your Password" style="border-radius: 10px;"#password>
+  <label for="name" style="padding-right: 30px;align-items: center;margin-top: 20px;"style="margin: 25px;">Password:</label>
+  <input type="password" placeholder="Your Password" style="border-radius: 10px;"#password style="margin: 25px; border-radius: 7px;">
   <br>
-  <button (click)="isvalid(name,password)" style="align-self: center;" routerLink="/home">Submit</button>
-  <a href="/">Don't have an account? create one</a>
+  <button (click)="isvalid(name,password)" style="align-self: center; margin-left: 30;" routerLink="/home" style="margin: 25px; border-radius: 7px;">Submit</button>
+  <br>
+  <a routerLink="/register" style="margin: 25px;">Don't have an account? <i> create one</i></a>
+ </div>
 </div>
