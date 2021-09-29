@@ -1,0 +1,28 @@
+<div class="container-fluid">
+  <div class="container">
+   <h4 style="text-align: center;">Your Details</h4>
+   <table style="border: 2px solid red">
+     <tr>
+       <th *ngFor = "let column of headers">
+           {{column}}
+       </th>
+
+     </tr>
+     <tr *ngFor = "let row of rows" style="padding: 30px;">
+      <td *ngFor = "let column of headers">
+         {{row.Id}}
+         <!-- {{row.Name}} -->
+        </td>
+     </tr>
+    </table>
+    <div class="container-additionalInfo" style="align-content: center;">
+     <label for="review" style="margin-top: 10px;" style="padding-right:30px ;"><b>Having any Reports?:</b></label>
+     <textarea name="reviews" id="studentReport" rows="4" cols="50" placeholder="Please feel free to give your reports" style="border-radius: 8px; margin-top: 12px;padding-left: 30px;"></textarea>
+    </div>
+
+ <div class="container" style="align-items: center;margin: 80px;">
+  <button class="btn-primary btn-md" style="margin-top: 30px;border-radius: 12px;">Submit</button>
+  <button class="btn-danger btn-md" style="margin-top: 30px;border-radius: 12px; box-align:right">Refresh</button>
+ </div>
+  </div>
+</div>

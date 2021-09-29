@@ -1,0 +1,19 @@
+<div class="container-fluid">
+  <div class="container">
+    <p style="font-size: 100;font-weight: bolder;text-align: center;"><b>Staff Component</b></p>
+  <table>
+    <tr>
+      <th *ngFor="let column of headers" style="padding-right: 40px;">
+          {{column}}
+      </th>
+    </tr>
+    <tr *ngFor = "let row of rows">
+      <td *ngFor = "let column of headers" style="padding-right: 40px;">
+        <input type="text" disabled value="{{(row.Name)}}">
+      </td>
+    </tr>
+  </table>
+   <button class="btn-success btn-md" style="border-radius: 7px; margin: 15px;">Submit</button>
+   <button class="btn-danger btn-md" style="border-radius: 7px; margin: 15px;">Refresh</button>
+</div>
+</div>
